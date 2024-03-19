@@ -62,11 +62,9 @@
       method:"post",
       url:"send-email",
       data:JSON.stringify({subject:subject, body: body}),
-      contentType: "application/json; charset=utf-8",
-      success:
-        alert("Mensagem enviada!");
-      }
+      contentType: "application/json; charset="utf-8"
      });
+          alert("Mensagem enviada!");
     }
     </script>
     <style>
