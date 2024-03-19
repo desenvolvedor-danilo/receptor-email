@@ -63,11 +63,13 @@
       url:"send-email",
       data:JSON.stringify({subject:subject, body: body}),
       contentType: "application/json; charset="utf-8",
-      success: function alerta(){
+      success: function(response){
+          $("#subject").val(response.subject);
           alert("enviado com sucesso");
       }
-     });
-    }
+     }).fail(function(xhr,status,errorThrown)
+             alert("erro ao enviar" +xhr.responseText);
+    });
     </script>
     <style>
         @import "../node_modules/bootstrap/scss/functions";
