@@ -63,8 +63,7 @@
       url:"send-email",
       data:JSON.stringify({subject:subject, body: body}),
       contentType: "application/json; charset=utf-8",
-      success: function(response){
-        $("#body").val(response.body);
+      success:
         alert("Mensagem enviada!");
       }
      });
