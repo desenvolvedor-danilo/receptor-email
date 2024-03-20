@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: dkmo.receptoremail.ReceptorEmailApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.88 s -- in dkmo.receptoremail.ReceptorEmailApplicationTests
