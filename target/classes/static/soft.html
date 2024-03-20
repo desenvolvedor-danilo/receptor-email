@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre mim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hard-skills.html">Hard-Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="soft.html">Soft-Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="curriculo.html">Currículo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contato.html">Contato</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+    <main class="container-sm">
+        <p>Bem, falar sobre minhas proprias qualidades me parece um tanto quanto presunçoso, portanto, vamos imaginar que há uma terceira pessoa agora e vamos perguntar para ela que qualidades ela vê no Danilo. Aviso aos recrutadores: Eu sei que esse tipo de pergunta é feita nas entrevista com o objetivo de perceber como a pessoa vê a si mesma, mas isso ainda não é uma entrevista, portanto, para que não fique chato vamos fazer esse exercício de imaginação.
+</p>
+            <h2>Quais qualidades você percebe no Danilo?</h2>
+            <p>
+            Bem, o Danilo é uma pessoa dedicada, esforçada, determinada, eu nunca o vi desistir de nada que ele começa. É engraçado que nem mesmo um livro ele consegue deixar pela metade, o Danilo se sente na obrigação de termina-lo pelo simples fato de ter começado a le-lo. Ele adora ler e parece viciado em estudar e, detalhe, ele tem muita facilidade em aprender aquilo que se propoe.
+        </p>
+        <p>
+            Sobre o inglês, eu o vi começar do absoluto zero e sozinho apenas lendo artigos e buscando o significado das palavras obter um nível instrumental de leitura e escrita no idioma. Ele não é fluente mais possue um bom nível para ler e escrever em inglês, o que em tecnologia, é uma excelente habilidade. Outra coisa, o Danilo adora aprender coisas novas, nada o deixa mais emocionado que estar vendo e fazendo algo que não sabia antes.
+        </p>
+        <p> 
+            Sempre o vi tratando todos ao lado dele com muito respeito e suspeito que tenha muita dificuldade de discutir com alguém por qualquer razão que seja. Posso perceber no seu cárater a personalidade de um Gentleman em tudo quanto faz e diz. Embora tenha suas próprias opiniões bem formadas e estabelecidas jamais o vi sendo desrespeitoso com ninguém acerca de escolhas pessoais que se restringem a individualidade de cada um.
+        </p>
+    </main>
+    <style>
+        @import "../node_modules/bootstrap/scss/functions";
+        h2{
+            text-align: center;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        body{
+         background-color: rgba(154, 243, 239, 0.493);
+        }
+        .container-sm{
+background-color: white;
+border-radius: 4px;
+        }
+        .bg-body-tertiary{
+            margin-bottom: 3px;
+            padding: 0px;
+            background-color: rgb(148, 148, 250);
+        }
+        .bg-body-tertiary div{
+          background-color: rgb(148, 148, 250);
+        }
+        
+        nav a:hover{
+        background-color:azure;
+        font-weight: bolder;
+        }
+        nav li{
+            list-style: none;
+        }
+        nav a:current{
+        color: var(--bs-blue);
+        }
+       .container-sm p{
+        text-indent: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.3em;
+        }
+
+        .d-flex{
+          background-color:rgb(148, 148, 250);
+        }
+        .btn{
+          background-color: white;
+        }
+        .btn:hover{
+          background-color: rgb(148, 148, 250);
+        }
+        .bg-body-tertiary a{
+          color: white;
+          font-weight: bold;
+          margin-left: 4px;
+        } 
+
+        @import "../node_modules/bootstrap/scss/variables";
+        @import "../node_modules/bootstrap/scss/variables-dark";
+        @import "../node_modules/bootstrap/scss/maps";
+        @import "../node_modules/bootstrap/scss/mixins";
+        @import "../node_modules/bootstrap/scss/root";
+        </style>
+</body>
+</html>
