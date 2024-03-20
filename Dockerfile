@@ -4,11 +4,6 @@ RUN apt-get install openjdk-17-jdk -y
 RUN apt-get install maven  -y
 RUN mvn clean install -DskipTests
 COPY . .
-
-FROM openjdk:17-slim
-
 EXPOSE 8080
-
-COPY --from=build /target/receptor-email-0.0.1-SNAPSHOT.jar app.jar
-
+COPY /target/todolist-0.0.1-SNAPSHOT.jar app.jar
 ENTRYPOINT [ "java","-jar","app.jar" ]
