@@ -5,5 +5,5 @@ RUN apt-get install maven  -y
 RUN mvn clean install -DskipTests
 COPY . .
 EXPOSE 8080
-COPY /target/todolist-0.0.1-SNAPSHOT.jar app.jar
+COPY . /target/todolist-0.0.1-SNAPSHOT.jar
 ENTRYPOINT [ "java","-jar","app.jar" ]
