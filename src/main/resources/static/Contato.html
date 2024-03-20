@@ -42,10 +42,19 @@
       </nav>
       
     <main class="container-sm">
-          <div class="mb-3">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Seu e-mail</label>
+        <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Seu nome</label>
+        <input type="email" class="form-control" id="nome" placeholder="Digite seu nome">
+      </div>    
+      <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Assunto</label>
             <input type="email" class="form-control" id="assunto" placeholder="Digite o assunto da mensagem">
           </div>
+          
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
             <textarea class="form-control" id="mensagem" rows="3"></textarea>
@@ -58,16 +67,20 @@
       function enviarEmail(){
      var subject = $('#assunto').val();
      var body = $('#mensagem').val();
+     var mail = $('#email').val();
+     var name = $('#nome').val();
+     if(mail==null||mail.trim()==""){
+      alert("campo de email obrigatório!")
+      $('#email').focus();
+      return;
+     }
      $.ajax({
       method:"post",
       url:"send-email",
-      data:JSON.stringify({subject:subject, body: body}),
-      contentType: "application/json; charset=utf-8",
-      success: function(response){
-          $("#subject").val(response.subject);
-          alert("enviado com sucesso");
-      }
+      data:JSON.stringify({nome:name,from:mail,subject:subject, body: body}),
+      contentType: "application/json; charset=utf-8"
     });
+        alert("Enviado");
   }
     </script>
     <style>
