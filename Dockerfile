@@ -1,4 +1,4 @@
-FROM openjdk:slim
+FROM openjdk-17:slim
 COPY . .
 EXPOSE 8080
 ENTRYPOINT [ "java","-jar","/target/receptor-email-0.0.1-SNAPSHOT.jar" ]
