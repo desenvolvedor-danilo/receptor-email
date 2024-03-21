@@ -1,6 +1,4 @@
-FROM ubuntu:latest
-RUN apt update
-RUN apt install openjdk-17-jdk -y
+FROM openjdk:slim
 COPY . .
 EXPOSE 8080
 ENTRYPOINT [ "java","-jar","/target/receptor-email-0.0.1-SNAPSHOT.jar" ]
